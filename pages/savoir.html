@@ -1,103 +1,293 @@
-<!DOCTYPE HTML>
-<html>
-<head><meta charset="utf-8">
-	<title>Pr&eacute;sentation</title>
-	<link href="icone.png" rel="shortcut icon" type="images/png" />
-	<link href="savoir/css/style.css" rel="stylesheet" />
-	<link href="css/contenu.css" rel="stylesheet" />
-	<link href="css/stylesmenumobile.css" rel="stylesheet" />
-	<link href="css/stylesmenu.css" media="screen and (min-width:1201px)" rel="stylesheet" />
-</head>
-<body>
-<header class="header" id="navbar">
-<div class="logobar">
-<h1 class="logo"><img alt="logo GEDES" src="../image/logo.png" /></h1>
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qui Sommes-nous - GEDES International</title>
+    <link href="../icone.png" rel="shortcut icon" type="image/png" />
 
-	<h2><span class="title"><div class="titrelogo">GEDES International</div>
-Geo-Engineering DEsign and Surveying<br>
-<div class="titrelogo2">ETUDES TECHNIQUES & INGENIERIE</div></span>
-</h2>
-</div>
-<div id="hambuger">
-		<nav >
-			<div id="hambuger-content" class="menu">
-			<ul>
-				<li class="mnu"><a href="../index.html">ACCUEIL</a></li>
-				<li id="smenu" class="mnu" onclick="ouvrirFermerSpoiler(this);"><a href="#">SERVICES<span id="plus">+</span> </a>
-					            <ul class="submenu">
-									<li ><a href="topographie.html">Topographie</a></li>
-									<li><a href="geodesie.html">Géodésie</a></li>
-									<li><a href="bathymetrie.html">Bathymétrie</a></li>
-									<li><a href="geotechnique.html">Géotechnique</a></li>
-									<li><a href="relevea.html">Relevé d'architecture</a></li>
-									<li><a href="telecommunication.html">Ingénierie Télécom</a></li>
-									<li><a href="teledetection.html">Télédétection</a></li>
-									<li><a href="reseaux.html">Détection de Réseaux Souterrains</a></li>
-									<li><a href="sig.html">cartographie SIG</a></li>
-									<li><a href="photogrametrie.html">Photogrammetrie</a></li>
-									<li><a href="VRD.html">Maîtrise d'oeuvre VRD</a></li>
-									<li><a href="travauxp.html">Travaux Publics</a></li>
-									<li><a href="batiment.html">Bâtiment</a></li>
-									<li><a href="terassement.html">Terrassement</a></li>
-									<li><a href="ingenierie.html">Ingénierie</a></li>
-									<li><a href="electrification.html">Electrification</a></li>
-								</ul>
-				 </li>
-			    <li class="mnu"><a href="reference.html">RÉFÉRENCES</a></li>								
-				<li class="mnu"><a href="video.html">VIDÉOS</a></li>
-				<li class="mnu"><a href="contact1.php">CONTACT</a></li>
-			</ul>
-			</div>
-		</nav>		
-		<button id="hambuger-button">&#9776;</button>
-		<div id="hambuger-sidebar">
-			<div id="hambuger-sidebar-header"></div>
-			<div id="hambuger-sidebar-body"></div>
-		</div>
-	<div id="hambuger-overlay"></div>
-</div>
-</header>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-<div id="conteneur">
-<div class="presentation">
-<p class="entete">GEDES INTERNATIONAL (Geo-Engineering Design and Surveying)</p>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-<p></p>
+    <!-- CSS Externe - Style Principal -->
+    <link href="../css/style-main.css" rel="stylesheet" />
+    <link href="savoir/css/style.css" rel="stylesheet" />
+  </head>
 
-<p class="decalage">est un bureau d&rsquo;&eacute;tudes sp&eacute;cialis&eacute; en topographie, g&eacute;od&eacute;sie et g&eacute;omatique. Bas&eacute;s en C&ocirc;te d&rsquo;ivoire et en France, nous intervenons en phase conception, mise en &oelig;uvre et &eacute;valuation des projets d&rsquo;infrastructures.</p>
+  <body>
+    <!-- ==================== HEADER ==================== -->
+    <header>
+      <div class="navbar">
+        <a href="../index.html" class="logo-link"
+          ><div class="logo-section">
+            <img src="../image/logo.png" alt="logo GEDES" />
+            <div class="brand-text">
+              <h1>GEDES International</h1>
+              <p>Geo-Engineering DEsign and Surveying</p>
+              <p class="brand-sub">ETUDES TECHNIQUES &amp; INGENIERIE</p>
+            </div>
+          </div></a
+        >
 
-<p class="decalage">Nos ing&eacute;nieurs et techniciens maitrisent l&rsquo;ensemble des techniques d&rsquo;acquisition, de traitement des donn&eacute;es topographiques et g&eacute;od&eacute;siques, ou plus g&eacute;n&eacute;ralement &agrave; r&eacute;f&eacute;rence spatiale.</p>
+        <nav id="mainNav">
+          <ul>
+            <li><a href="../index.html">ACCUEIL</a></li>
+            <li class="smenu" onclick="toggleSubmenu(event)">
+              <a href="#">SERVICES <span>+</span></a>
+              <ul class="submenu">
+                <li><a href="topographie.html">Topographie</a></li>
+                <li><a href="geodesie.html">Géodésie</a></li>
+                <li><a href="bathymetrie.html">Bathymétrie</a></li>
+                <li><a href="geotechnique.html">Géotechnique</a></li>
+                <li><a href="relevea.html">Relevé d'architecture</a></li>
+                <li><a href="telecommunication.html">Ingénierie Télécom</a></li>
+                <li><a href="teledetection.html">Télédétection</a></li>
+                <li><a href="reseaux.html">Détection de Réseaux</a></li>
+                <li><a href="sig.html">Cartographie SIG</a></li>
+                <li><a href="photogrametrie.html">Photogrammetrie</a></li>
+                <li><a href="VRD.html">Maîtrise d'oeuvre VRD</a></li>
+                <li><a href="travauxp.html">Travaux Publics</a></li>
+              </ul>
+            </li>
+            <li><a href="reference.html">RÉFÉRENCES</a></li>
+            <li><a href="video.html">VIDÉOS</a></li>
+            <li><a href="contact1.php">CONTACT</a></li>
+          </ul>
+        </nav>
 
-<p class="decalage">Disposant d&rsquo;un personnel hautement qualifi&eacute;, compos&eacute; d&rsquo;ing&eacute;nieurs et techniciens topographes, g&eacute;od&eacute;siens, g&eacute;nie civil, g&eacute;omatique, t&eacute;l&eacute;coms, tous issus des plus grandes &eacute;coles de r&eacute;f&eacute;rence, nous intervenons dans plus d&rsquo;une dizaine de pays &agrave; travers le monde:<br />
-<br />
-<strong>Afrique: </strong>C&ocirc;te d&rsquo;ivoire, Mali, Burkina Faso, Cameroun, Guin&eacute;e &eacute;quatoriale<br />
-<strong>Asie</strong>: Irak, Arabie saoudite, Bahre&iuml;n<br />
-<strong>Europe</strong>: France m&eacute;tropolitaine, &Icirc;le de la R&eacute;union&hellip;</p>
-
-<p class="decalage">L&rsquo;&eacute;quipe est encadr&eacute;e par <b>Mr ANJA Samuel, ing&eacute;nieur g&eacute;om&egrave;tre, expert en g&eacute;od&eacute;sie spatiale et t&eacute;l&eacute;d&eacute;tection.</b></p>
-
-<p class="decalage">Notre souci &eacute;tant de vous satisfaire, nous disposons d&rsquo;&eacute;quipes dynamiques et du mat&eacute;riel de haute technologie permettant de vous accompagner efficacement dans tous vos projets d&rsquo;infrastructures.</p>
-
-<p><b><em class="decalage">N&rsquo;h&eacute;sitez donc pas &agrave; nous solliciter&hellip;..</em></b></p>
-
-<div class="cta-section">
-	<a href="contact1.php" class="btn-savoir-plus">Savoir Plus</a>
-</div>
-</div>
-</div>
-
-<div class="contact">
-     	<section class="information">
-     	<div class="contactinfo" id="gauche"><h1 class="titrecontact">GEDES International</h1><p>Siège Abidjan: Riviera Palmeraie</br>01 BP 6116 Abidjan 01</br> Tel/Fax:(+225) 27 22 51 24 93 / 05 76 48 77 05 </br>Mobile:(+225) 07 77 10 11 11 / 01 03 77 74 75</br> Email: gedes@gedes-international.com</br>contact@gedes-international.com</p></div>
-     	<div  class="contactinfo" id="nousecrire"><a href="contact1.php" class="lien2"><p id="ecrire">Nous écrire</p></a></div>
-     	<div class="contactinfo" id="droite"><div class="contgauche"><img src="batiment/image/logo1.png"/></div> <div class="contgauche"><h2><span class="title"><div class="titrelogocontact">GEDES International</div><br>
-Geo-Engineering DEsign and Surveying<br>
-<div class="titrelogocontact2">ETUDES TECHNIQUES & INGENIERIE</div></span></h2> </div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-     	</section>
-     </div>
+      </div>
+    </header>
 
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-page">
+      <div class="hero-page-content">
+        <h1>Qui Sommes-nous ?</h1>
+        <p>
+          Découvrez GEDES International, un bureau d'études spécialisé en
+          topographie, géodésie et géomatique
+        </p>
+      </div>
+    </section>
 
-<footer class="ombre">&copy; 2024 GEDES International - Tous droits r&eacute;serv&eacute;s | <strong>Siège Abidjan: Riviera Palmeraie, 01 BP 6116 Abidjan 01</strong> | <strong>Tel/Fax:</strong> (+225) 27 22 51 24 93 / 05 76 48 77 05 | <strong>Mobile:</strong> (+225) 07 77 10 11 11 / 01 03 77 74 75 | <strong>Email:</strong> gedes@gedes-international.com / contact@gedes-international.com | <em>Made by <a href="https://my-porfolio-lilac-theta.vercel.app/" target="_blank" style="color: inherit; text-decoration: underline;">Ma-sy</a></em></footer>
-<script src="../css/stylemenu.js"></script><script type="text/javascript" src="../css/menu.js"></script></body>
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <section class="savoir-content">
+      <div class="content-wrapper">
+        <!-- Section Présentation -->
+        <div class="intro-section">
+          <h2>GEDES International</h2>
+          <p class="intro-subtitle">
+            <strong>Geo-Engineering Design and Surveying</strong>
+          </p>
+          <p class="intro-text">
+            Un bureau d'études spécialisé en topographie, géodésie et géomatique
+            avec une présence en Côte d'Ivoire et en France.
+          </p>
+          <p class="intro-text">
+            Nous intervenons en phase conception, mise en œuvre et évaluation
+            des projets d'infrastructures complexes.
+          </p>
+          <p class="intro-text">
+            Nos ingénieurs et techniciens maîtrisent l'ensemble des techniques
+            d'acquisition et de traitement des données à référence spatiale.
+          </p>
+        </div>
+
+        <!-- Grid 3 colonnes -->
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Notre Équipe</h3>
+            <p>
+              Personnel hautement qualifié composé d'ingénieurs et techniciens
+              topographes, géodésiens, génie civil et géomatique issus des plus
+              grandes écoles de référence.
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Présence Mondiale</h3>
+            <p>
+              Nous intervenons dans plus d'une dizaine de pays à travers le
+              monde en Afrique, Asie et Europe.
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Technologie Avancée</h3>
+            <p>
+              Disposant d'équipes dynamiques et du matériel de haute technologie
+              permettant de vous accompagner efficacement.
+            </p>
+          </div>
+        </div>
+
+        <!-- Zone Géographique -->
+        <div class="geographic-section">
+          <h2>Notre Présence Géographique</h2>
+          <div class="geo-grid">
+            <div class="geo-region">
+              <h4><strong>Afrique</strong></h4>
+              <ul>
+                <li>Côte d'Ivoire</li>
+                <li>Mali</li>
+                <li>Burkina Faso</li>
+                <li>Cameroun</li>
+                <li>Guinée équatoriale</li>
+              </ul>
+            </div>
+            <div class="geo-region">
+              <h4><strong>Asie</strong></h4>
+              <ul>
+                <li>Irak</li>
+                <li>Arabie Saoudite</li>
+                <li>Bahreïn</li>
+              </ul>
+            </div>
+            <div class="geo-region">
+              <h4><strong>Europe</strong></h4>
+              <ul>
+                <li>France métropolitaine</li>
+                <li>Île de la Réunion</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section Leadership -->
+        <div class="leadership-section">
+          <h2>Notre Leadership</h2>
+          <div class="leader-card">
+            <h3>Mr ANJA Samuel</h3>
+            <p class="title">Ingénieur Géomètre</p>
+            <p class="description">
+              Expert en géodésie spatiale et télédétection
+            </p>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="savoir-cta">
+          <h2>Prêt à collaborer avec nous ?</h2>
+          <p>
+            Contactez nos experts pour une consultation gratuite et découvrez
+            comment nous pouvons soutenir vos projets.
+          </p>
+          <a href="contact1.php" class="cta-button">Nous Contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>GEDES International</h3>
+          <p><strong>Geo-Engineering Design and Surveying</strong></p>
+          <p>
+            Un bureau d'études spécialisé en topographie, géodésie et géomatique
+            de renommée internationale.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i>
+            <strong>Siège Abidjan: Riviera Palmeraie</strong><br />01 BP 6116
+            Abidjan 01
+          </p>
+          <p>
+            <i class="fas fa-phone"></i> <strong>Tel/Fax:</strong><br />(+225)
+            27 22 51 24 93 / 05 76 48 77 05
+          </p>
+          <p>
+            <i class="fas fa-mobile-alt"></i> <strong>Mobile:</strong
+            ><br />(+225) 07 77 10 11 11 / 01 03 77 74 75
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i> <strong>Email:</strong><br />
+            <a href="mailto:gedes@gedes-international.com"
+              >gedes@gedes-international.com</a
+            ><br />
+            <a href="mailto:contact@gedes-international.com"
+              >contact@gedes-international.com</a
+            >
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Services Principaux</h3>
+          <ul>
+            <li><a href="topographie.html">Topographie</a></li>
+            <li><a href="geodesie.html">Géodésie</a></li>
+            <li><a href="bathymetrie.html">Bathymétrie</a></li>
+            <li><a href="geotechnique.html">Géotechnique</a></li>
+            <li><a href="sig.html">Cartographie SIG</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Liens Utiles</h3>
+          <ul>
+            <li><a href="reference.html">Références</a></li>
+            <li><a href="video.html">Vidéos</a></li>
+            <li><a href="contact1.php">Contact</a></li>
+            <li><a href="../index.html">Accueil</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 GEDES International - Tous droits réservés</p>
+        <p>
+          <em
+            >Made by
+            <a
+              href="https://my-porfolio-lilac-theta.vercel.app/"
+              target="_blank"
+              >Ma-sy</a
+            ></em
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="../js/main.js"></script>
+    <script>
+      // Active menu link
+      document.addEventListener('DOMContentLoaded', function () {
+        const currentPage =
+          window.location.pathname.split('/').pop() || 'index.html'
+        const navLinks = document.querySelectorAll('nav a')
+        navLinks.forEach((link) => {
+          if (link.getAttribute('href').includes('savoir')) {
+            link.classList.add('active')
+          }
+        })
+      })
+    </script>
+  </body>
 </html>
