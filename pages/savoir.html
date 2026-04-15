@@ -725,16 +725,15 @@
     <script src="../js/main.js"></script>
     <script>
       // Scroll reveal
-      const reveals = document.querySelectorAll('.reveal');
-      const observer = new IntersectionObserver((entries) => {
+      const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(e => {
           if (e.isIntersecting) {
             e.target.classList.add('visible');
-            observer.unobserve(e.target);
+            revealObserver.unobserve(e.target);
           }
         });
-      }, { threshold: 0.12 });
-      reveals.forEach(el => observer.observe(el));
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
       // Counter animation
       function animateCounter(el) {
