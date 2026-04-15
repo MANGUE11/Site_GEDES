@@ -17,7 +17,7 @@ if (!array_key_exists('message', $_POST) | $_POST['message'] == ''){
 if (!empty($errors)){
     $_SESSION['errors'] = $errors;
     $_SESSION['inputs'] = $_POST;
-    header('location: contact1.php');
+    header('location: contact.html');
 }else{
  $_SESSION['success'] = 1;
  $message = $_POST['message'];
@@ -33,6 +33,6 @@ Tel :$numero \n
 Sujet :$demande \n
  $message";
 mail('bacon@gedesinternational.com', 'Formulaire de conatact', $contenu, $headers);
- header('location: contact1.php');
+ header('location: contact.html');
 }
 ?>

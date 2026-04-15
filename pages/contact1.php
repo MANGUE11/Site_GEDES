@@ -50,7 +50,7 @@
         <li><a href="savoir.html">À PROPOS</a></li>
         <li><a href="reference.html">RÉFÉRENCES</a></li>
         <li><a href="video.html">VIDÉOS</a></li>
-        <li><a href="contact1.php" class="active">CONTACT</a></li>
+        <li><a href="contact.html" class="active">CONTACT</a></li>
       </ul>
     </nav>
     <div class="hamburger" onclick="toggleMenu()">
@@ -125,7 +125,7 @@
         </div>
       <?php endif; ?>
 
-      <form class="contact-form" action="post_contact1.php" method="POST">
+      <form class="contact-form" action="post_contact.html" method="POST">
         <div class="form-row">
           <div class="form-group">
             <label for="prenom">Prénom *</label>
@@ -199,7 +199,7 @@
       <ul>
         <li><a href="reference.html">Références</a></li>
         <li><a href="video.html">Vidéos</a></li>
-        <li><a href="contact1.php">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="mailto:gedes@gedes-international.com">Email</a></li>
       </ul>
     </div>

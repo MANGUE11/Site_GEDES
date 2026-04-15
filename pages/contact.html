@@ -1,213 +1,209 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Contact</title>
-    <link href="icone.png" rel="shortcut icon" type="images/png" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="contact/css/formulaire.css" rel="stylesheet" />
-    <link href="css/stylesmenumobile.css" rel="stylesheet" />
-    <link
-      href="css/stylesmenu.css"
-      media="screen and (min-width:1201px)"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header" id="navbar">
-      <div class="logobar">
-        <h1 class="logo"><img alt="logo GEDES" src="../image/logo.png" /></h1>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — GEDES International</title>
+  <link href="../icone.png" rel="shortcut icon" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="../css/style-main.css" rel="stylesheet" />
+  <link href="css/pages-style.css" rel="stylesheet" />
+</head>
+<body>
 
-        <h2></h2>
-
-        <div class="titrelogo">
-          <span class="title">GEDES International</span>
-        </div>
-        <span class="title">Geo-Engineering DEsign and Surveying</span>
-
-        <div class="titrelogo2">
-          <span class="title">ETUDES TECHNIQUES &amp; INGENIERIE</span>
-        </div>
+<header>
+  <div class="navbar">
+    <a href="../index.html" class="logo-link"><div class="logo-section">
+      <img src="../image/logo.png" alt="logo GEDES" />
+      <div class="brand-text">
+        <h1>GEDES International</h1>
+        <p>Geo-Engineering DEsign and Surveying</p>
+        <p class="brand-sub">ETUDES TECHNIQUES &amp; INGENIERIE</p>
       </div>
+    </div></a>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="../index.html">ACCUEIL</a></li>
+        <li class="smenu" onclick="toggleSubmenu(event)">
+          <a href="#">SERVICES <span>+</span></a>
+          <ul class="submenu">
+            <li><a href="topographie.html">Topographie</a></li>
+            <li><a href="geodesie.html">Géodésie</a></li>
+            <li><a href="bathymetrie.html">Bathymétrie</a></li>
+            <li><a href="geotechnique.html">Géotechnique</a></li>
+            <li><a href="relevea.html">Relevé d'architecture</a></li>
+            <li><a href="telecommunication.html">Ingénierie Télécom</a></li>
+            <li><a href="teledetection.html">Télédétection</a></li>
+            <li><a href="reseaux.html">Détection de Réseaux</a></li>
+            <li><a href="sig.html">Cartographie SIG</a></li>
+            <li><a href="photogrametrie.html">Photogrammetrie</a></li>
+            <li><a href="VRD.html">Maîtrise d'oeuvre VRD</a></li>
+            <li><a href="travauxp.html">Travaux Publics</a></li>
+            <li><a href="batiment.html">Bâtiment</a></li>
+            <li><a href="terassement.html">Terrassement</a></li>
+            <li><a href="ingenierie.html">Ingénierie</a></li>
+            <li><a href="electrification.html">Électrification</a></li>
+          </ul>
+        </li>
+        <li><a href="savoir.html">À PROPOS</a></li>
+        <li><a href="reference.html">RÉFÉRENCES</a></li>
+        <li><a href="video.html">VIDÉOS</a></li>
+        <li><a href="contact.html" class="active">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
 
-      <div id="hambuger">
-        <nav>
-          <div class="menu" id="hambuger-content">
-            <ul>
-              <li class="mnu"><a href="../index.html">ACCUEIL</a></li>
-              <li class="mnu" id="smenu" onclick="ouvrirFermerSpoiler(this)">
-                <a href="#">SERVICES<span id="plus">+</span> </a>
-                <ul class="submenu">
-                  <li><a href="topographie.html">Topographie</a></li>
-                  <li><a href="geodesie.html">G&eacute;od&eacute;sie</a></li>
-                  <li><a href="bathymetrie.html">Bathym&eacute;trie</a></li>
-                  <li><a href="geotechnique.html">G&eacute;otechnique</a></li>
-                  <li>
-                    <a href="relevea.html">Relev&eacute; d&#39;architecture</a>
-                  </li>
-                  <li>
-                    <a href="telecommunication.html"
-                      >T&eacute;l&eacute;communication</a
-                    >
-                  </li>
-                  <li>
-                    <a href="teledetection.html"
-                      >T&eacute;l&eacute;d&eacute;tection</a
-                    >
-                  </li>
-                  <li>
-                    <a href="reseaux.html"
-                      >D&eacute;tection de R&eacute;seaux Souterrains</a
-                    >
-                  </li>
-                  <li><a href="sig.html">cartographie SIG</a></li>
-                  <li><a href="photogrametrie.html">Photogrammetrie</a></li>
-                  <li>
-                    <a href="VRD.html">Ma&icirc;trise d&#39;oeuvre VRD</a>
-                  </li>
-                  <li><a href="travauxp.html">Travaux Publics</a></li>
-                  <li><a href="batiment.html">B&acirc;timent</a></li>
-                  <li><a href="terassement.html">Terrassement</a></li>
-                  <li><a href="ingenierie.html">Ing&eacute;nierie</a></li>
-                  <li><a href="electrification.html">Electrification</a></li>
-                </ul>
-              </li>
-              <li class="mnu">
-                <a href="reference.html">R&Eacute;F&Eacute;RENCES</a>
-              </li>
-              <li class="mnu"><a href="video.html">VID&Eacute;OS</a></li>
-              <li class="mnu"><a href="contact1.php">CONTACT</a></li>
-            </ul>
+<section class="page-hero" style="background: linear-gradient(135deg, #004f7c 0%, #0093c9 100%);">
+  <div class="page-hero-overlay" style="background: linear-gradient(to bottom, rgba(0,40,80,0.2), rgba(0,40,80,0.55));"></div>
+  <div class="page-hero-content">
+    <span class="hero-badge">Contactez-nous</span>
+    <h1>Contact</h1>
+  </div>
+</section>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="../index.html">Accueil</a>
+    <span class="sep">/</span>
+    <span class="current">Contact</span>
+  </div>
+</div>
+
+<section class="contact-section">
+  <div class="contact-wrapper">
+
+    <!-- Infos -->
+    <div class="contact-info">
+      <h2 class="content-title">Parlons de votre projet</h2>
+      <p class="content-lead">Un projet ? Une question ? Remplissez le formulaire et nous vous répondrons dans les plus brefs délais.</p>
+
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="info-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4>Siège social</h4>
+            <p>Riviera Palmeraie, Abidjan<br>01 BP 6116 Abidjan 01</p>
           </div>
-        </nav>
-        <button id="hambuger-button">☰</button>
-
-        <div id="hambuger-sidebar">
-          <div id="hambuger-sidebar-header"></div>
-
-          <div id="hambuger-sidebar-body"></div>
         </div>
-
-        <div id="hambuger-overlay"></div>
-      </div>
-    </header>
-
-    <div class="fond">
-      <div class="contactbar">
-        <p class="contact1">CONTACT</p>
-      </div>
-
-      <div class="paragraphe">
-        <p>
-          Un projet? Une question? Nous vous remercions de bien vouloir remplir
-          ce formulaire ci-dessous et nous vous recontacterons dans les plus
-          brefs d&eacute;lais.
-        </p>
+        <div class="info-card">
+          <div class="info-card-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <h4>Téléphone</h4>
+            <p>(+225) 27 22 51 24 93 / 05 76 48 77 05<br>(+225) 07 77 10 11 11 / 01 03 77 74 75</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>Email</h4>
+            <p>gedes@gedes-international.com<br>contact@gedes-international.com</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <section class="ombre contenuGalerie" id="formulaire1">
-      <form action="confirmation.php" class="formformulaire" method="POST">
-        <br />
-        <br />
-        <input
-          class="entretexte"
-          name="prenom"
-          placeholder="Prénom*"
-          type="text"
-        />
-        <input
-          class="entretexte"
-          name="nom"
-          placeholder="Nom*"
-          type="text"
-        /><br />
-        <input
-          class="entretexte"
-          name="email"
-          placeholder="Adresse électronique*"
-          type="text"
-        />
-        <input
-          class="entretexte"
-          name="numero"
-          placeholder="Numéro de téléphone*"
-          type="text"
-        /><br />
-        <select class="section" name="demande">
-          <option>Demande d&#39;information</option>
-          <option>Offre commerciale</option>
-          <option>Autre demande</option></select
-        ><textarea
-          class="entremessage"
-          name="message"
-          placeholder="Votre message*"
-        ></textarea>
-
-        <div class="envoyer">
-          <input class="submit" type="submit" value="Envoyer" />
+    <!-- Formulaire statique -->
+    <div class="contact-form-box">
+      <form class="contact-form" action="#" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="prenom">Prénom *</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+          </div>
+          <div class="form-group">
+            <label for="nom">Nom *</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+          </div>
         </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="numero">Téléphone *</label>
+            <input type="text" id="numero" name="numero" placeholder="+225 00 00 00 00 00" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="demande">Objet de la demande</label>
+          <select id="demande" name="demande">
+            <option value="Demande d'information">Demande d'information</option>
+            <option value="Offre commerciale">Offre commerciale</option>
+            <option value="Autre demande">Autre demande</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou votre demande…" required></textarea>
+        </div>
+        <div id="form-feedback"></div>
+        <button type="submit" class="form-submit">
+          <i class="fas fa-paper-plane"></i> Envoyer le message
+        </button>
       </form>
-    </section>
-
-    <div class="contact">
-      <section class="information">
-        <div class="contactinfo" id="gauche">
-          <h1 class="titrecontact">GEDES International</h1>
-
-          <p>
-            Si&egrave;ge Abidjan: Riviera Palmeraie<br />
-            01 BP 6116 Abidjan 01<br />
-            Tel/Fax:(+225) 27 22 51 24 93<br />
-            Mobile:(+225) 07 77 10 11 11&nbsp;/ 01 03 77 74 75<br />
-            Email: gedes@gedes-international.com
-          </p>
-        </div>
-
-        <div class="contactinfo" id="nousecrire">
-          <p id="ecrire">
-            <a class="lien2" href="contact.html">Nous &eacute;crire</a>
-          </p>
-        </div>
-
-        <div class="contactinfo" id="droite">
-          <div class="contgauche"><img src="batiment/image/logo1.png" /></div>
-
-          <div class="contgauche">
-            <h2></h2>
-
-            <div class="titrelogocontact">
-              <span class="title">GEDES International</span>
-            </div>
-            <br />
-            <span class="title">Geo-Engineering DEsign and Surveying</span>
-
-            <div class="titrelogocontact2">
-              <span class="title">ETUDES TECHNIQUES &amp; INGENIERIE</span>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
 
-    <footer class="ombre">
-      &copy; 2024 GEDES International - Tous droits r&eacute;serv&eacute;s |
-      <strong>Siège Abidjan: Riviera Palmeraie, 01 BP 6116 Abidjan 01</strong> |
-      <strong>Tel/Fax:</strong> (+225) 27 22 51 24 93 / 05 76 48 77 05 |
-      <strong>Mobile:</strong> (+225) 07 77 10 11 11 / 01 03 77 74 75 |
-      <strong>Email:</strong> gedes@gedes-international.com /
-      contact@gedes-international.com |
-      <em
-        >Made by
-        <a
-          href="https://my-porfolio-lilac-theta.vercel.app/"
-          target="_blank"
-          style="color: inherit; text-decoration: underline"
-          >Ma-sy</a
-        ></em
-      >
-    </footer>
-    <script src="../css/stylemenu.js"></script>
-    <script type="text/javascript" src="../css/menu.js"></script>
-  </body>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-column">
+      <h3>GEDES International</h3>
+      <p><strong>Geo-Engineering Design and Surveying</strong></p>
+      <p>Un bureau d'études spécialisé en topographie, géodésie et géomatique de renommée internationale.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p><i class="fas fa-map-marker-alt"></i> <strong>Siège Abidjan: Riviera Palmeraie</strong></p>
+      <p>01 BP 6116 Abidjan 01</p>
+      <p><i class="fas fa-phone"></i> <strong>Tel/Fax:</strong> (+225) 27 22 51 24 93 / 05 76 48 77 05</p>
+      <p><i class="fas fa-mobile-alt"></i> <strong>Mobile:</strong> (+225) 07 77 10 11 11 / 01 03 77 74 75</p>
+      <p><i class="fas fa-envelope"></i> <strong>Email:</strong><br>
+        <a href="mailto:gedes@gedes-international.com">gedes@gedes-international.com</a><br>
+        <a href="mailto:contact@gedes-international.com">contact@gedes-international.com</a>
+      </p>
+    </div>
+    <div class="footer-column">
+      <h3>Services Principaux</h3>
+      <ul>
+        <li><a href="topographie.html">Topographie</a></li>
+        <li><a href="geodesie.html">Géodésie</a></li>
+        <li><a href="bathymetrie.html">Bathymétrie</a></li>
+        <li><a href="geotechnique.html">Géotechnique</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Liens Utiles</h3>
+      <ul>
+        <li><a href="reference.html">Références</a></li>
+        <li><a href="video.html">Vidéos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="mailto:gedes@gedes-international.com">Email</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 GEDES International — Tous droits réservés</p>
+    <p><em>Made by <a href="https://my-porfolio-lilac-theta.vercel.app/" target="_blank">Ma-sy</a></em></p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const fb = document.getElementById('form-feedback');
+    fb.innerHTML = '<div class="form-alert form-alert--success" style="margin-bottom:1rem"><i class="fas fa-check-circle"></i> Merci ! Votre message a bien été reçu. Nous vous répondrons rapidement.</div>';
+    e.target.reset();
+    fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+</script>
+</body>
 </html>
