@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(perl -i -0pe 's|    </div>\\\\n    <nav id=\"mainNav\">|    </div>\\\\n    </a>\\\\n    <nav id=\"mainNav\">|g' c:/wamp64/www/site_GEDES/pages/*.html)"
+      "Bash(perl -i -0pe 's|    </div>\\\\n    <nav id=\"mainNav\">|    </div>\\\\n    </a>\\\\n    <nav id=\"mainNav\">|g' c:/wamp64/www/site_GEDES/pages/*.html)",
+      "Bash(perl -i -0pe 's|\\(<li><a href=\"reference\\\\.html\">RÉFÉRENCES</a></li>\\)|<li><a href=\"savoir.html\">À PROPOS</a></li>\\\\n        $1|g' c:/wamp64/www/site_GEDES/pages/*.html c:/wamp64/www/site_GEDES/pages/*.php)"
     ]
   }
 }
