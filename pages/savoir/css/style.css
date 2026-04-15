@@ -250,3 +250,80 @@ footer{
 .ombre{box-shadow: 0 0 10px #999;
 }
 }
+
+/* ===== STYLES CTA BUTTON ===== */
+.cta-section {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.btn-savoir-plus {
+	display: inline-block;
+	padding: 16px 45px;
+	background: linear-gradient(135deg, #0093c9 0%, #0073a8 100%);
+	color: white;
+	text-decoration: none;
+	border-radius: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(0, 147, 201, 0.3);
+	border: 2px solid #0093c9;
+	letter-spacing: 0.5px;
+	cursor: pointer;
+}
+
+.btn-savoir-plus:hover {
+	background: linear-gradient(135deg, #0073a8 0%, #005a86 100%);
+	transform: translateY(-3px);
+	box-shadow: 0 6px 20px rgba(0, 147, 201, 0.5);
+	border-color: #005a86;
+}
+
+.btn-savoir-plus:active {
+	transform: translateY(-1px);
+	box-shadow: 0 3px 10px rgba(0, 147, 201, 0.3);
+}
+
+/* ===== IMPROVED PRESENTATION STYLING ===== */
+.presentation {
+	background: #f9f9f9;
+	padding: 40px;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	line-height: 1.8;
+}
+
+.presentation .entete {
+	margin-bottom: 30px;
+	font-size: 28px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.presentation p {
+	margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+	.cta-section {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+
+	.btn-savoir-plus {
+		padding: 14px 35px;
+		font-size: 16px;
+	}
+
+	.presentation {
+		padding: 25px;
+	}
+
+	.presentation .entete {
+		font-size: 22px;
+	}
+}
