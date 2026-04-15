@@ -64,6 +64,9 @@ function toggleSubmenu(event) {
 // ==================== CLOSE MENU ON LINK CLICK ====================
 document.querySelectorAll('nav a').forEach((link) => {
   link.addEventListener('click', () => {
+    // Ne pas fermer le nav quand on clique sur le toggle SERVICES (mobile)
+    if (link.parentElement.classList.contains('smenu')) return
+
     const hamburger = document.querySelector('.hamburger')
     const nav = document.getElementById('mainNav')
 
