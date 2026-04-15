@@ -1,0 +1,37 @@
+@media screen and (min-width: 1201px){
+	.contenu{
+	margin: auto;
+	width: 95%;
+	margin-top: 20px;
+}
+#paragraphe{
+	margin-top:-40px;
+font-family:"Roboto Condensed",sans-serif;
+	padding: 30px;
+	font-size: 25px;
+    color: #333 !important;}
+#titre{
+	font-size: 30px;
+	color: #0093c9;
+	padding: 30px;
+}
+}
+@media screen and (max-width: 1200px){
+    .contenu{
+	margin: auto;
+	width: 95%;
+	margin-top: 20px;
+}
+#paragraphe{
+	margin-top:-40px;
+	font-family:"Roboto Condensed",sans-serif;
+	padding: 30px;
+	font-size: 25px;
+    color: #333 !important;
+}
+#titre{
+	font-size: 25px;
+	color: #0093c9;
+	padding: 30px;
+}
+}

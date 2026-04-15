@@ -1,0 +1,68 @@
+#partenaire{
+	padding: 0;
+	margin:0;
+	list-style-type: none;
+	width:1230px;
+	top:0px;
+	position:absolute; 
+	-webkit-animation:sliderAuto 20s infinite;
+	-moz-animation:sliderAuto 20s infinite;
+	-o-animation:sliderAuto 20s infinite;
+	animation:sliderAuto 20s infinite;
+}
+#wrapper{
+	margin: auto;
+	border: 1px solid #696969;
+	width: 412px;
+	height:82px;
+	overflow: hidden;
+	position: relative;
+	top: 10px;
+	border-radius: 2px;
+
+}
+
+.slide{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border: 1px solid #696969;
+	border-radius: 3px;
+}
+@-webkit-keyframes sliderAuto{
+	0%{left: 0;}
+	
+	33%{left: -412px;}
+
+	66%{left: -824px;}
+	
+	100%{left: 0;}
+}
+@-moz-keyframes sliderAuto{
+	0%{left: 0;}
+	
+	33%{left: -412px;}
+
+	66%{left: -824px;}
+	
+	100%{left: 0;}
+}
+@-o-keyframes sliderAuto{
+	0%{left: 0;}
+	
+	33%{left: -412px;}
+
+	66%{left: -824px;}
+	
+	100%{left: 0;}
+}
+@-keyframes sliderAuto{
+	0%{left: 0;}
+	
+	33%{left: -412px;}
+
+	66%{left: -824px;}
+	
+	100%{left: 0;}
+}
+

@@ -1,0 +1,75 @@
+@media screen and (max-width: 1200px){
+
+.contenupart{
+    margin-top:-330px;
+    padding-bottom:100px;
+}
+
+#partenaire{
+	padding: 0;
+	margin:0;
+	list-style-type: none;
+	width:2280px;
+	top:0px;
+	position:absolute; 
+	-webkit-animation:sliderAuto 20s infinite;
+	-moz-animation:sliderAuto 20s infinite;
+	-o-animation:sliderAuto 20s infinite;
+	animation:sliderAuto 20s infinite;
+}
+#wrapper{
+	margin: auto;
+	border: 1px solid #696969;
+	width: 752px;
+	height:152px;
+	overflow: hidden;
+	position: relative;
+	top: 10px;
+	border-radius: 2px;
+
+}
+
+.slide{
+	width: 150px;
+	height: 150px;
+	float: left;
+	border: 1px solid #696969;
+	border-radius: 3px;
+}
+@-webkit-keyframes sliderAuto{
+	0%{left: 0;}
+	
+	33%{left: -752px;}
+
+	66%{left: -1504px;}
+	
+	100%{left: 0;}
+}
+@-moz-keyframes sliderAuto{
+	0%{left: 0;}
+	
+	33%{left: -752px;}
+
+	66%{left: -1504px;}
+	
+	100%{left: 0;}
+}
+@-o-keyframes sliderAuto{
+	0%{left: 0;}
+	
+	33%{left: -752px;}
+
+	66%{left: -1504px;}
+	
+	100%{left: 0;}
+}
+@-keyframes sliderAuto{
+	0%{left: 0;}
+	
+	33%{left: -752px;}
+
+	66%{left: -1504px;}
+	
+	100%{left: 0;}
+}
+}

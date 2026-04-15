@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GEDES International - Ingénierie & Géomatique</title>
+	<link href="icone.png" rel="shortcut icon" type="image/png" />
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	<!-- CSS Externe - Style Principal -->
+	<link href="css/style-main.css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<!-- ==================== HEADER ==================== -->
+	<header>
+		<div class="navbar">
+			<a href="index.html" class="logo-link"><div class="logo-section">
+				<img src="image/logo.png" alt="logo GEDES" />
+				<div class="brand-text">
+					<h1>GEDES International</h1>
+					<p>Geo-Engineering DEsign and Surveying</p>
+					<p class="brand-sub">ETUDES TECHNIQUES &amp; INGENIERIE</p>
+				</div>
+			</div></a>
+
+			<nav id="mainNav">
+				<ul>
+					<li><a href="index.html">ACCUEIL</a></li>
+					<li class="smenu" onclick="toggleSubmenu(event)">
+						<a href="#">SERVICES <span>+</span></a>
+						<ul class="submenu">
+							<li><a href="pages/topographie.html">Topographie</a></li>
+							<li><a href="pages/geodesie.html">Géodésie</a></li>
+							<li><a href="pages/bathymetrie.html">Bathymétrie</a></li>
+							<li><a href="pages/geotechnique.html">Géotechnique</a></li>
+							<li><a href="pages/relevea.html">Relevé d'architecture</a></li>
+							<li><a href="pages/telecommunication.html">Ingénierie Télécom</a></li>
+							<li><a href="pages/teledetection.html">Télédétection</a></li>
+							<li><a href="pages/reseaux.html">Détection de Réseaux</a></li>
+							<li><a href="pages/sig.html">Cartographie SIG</a></li>
+							<li><a href="pages/photogrametrie.html">Photogrammetrie</a></li>
+							<li><a href="pages/VRD.html">Maîtrise d'oeuvre VRD</a></li>
+							<li><a href="pages/travauxp.html">Travaux Publics</a></li>
+							<li><a href="pages/batiment.html">Bâtiment</a></li>
+							<li><a href="pages/terassement.html">Terrassement</a></li>
+							<li><a href="pages/ingenierie.html">Ingénierie</a></li>
+							<li><a href="pages/electrification.html">Électrification</a></li>
+						</ul>
+					</li>
+					<li><a href="pages/reference.html">RÉFÉRENCES</a></li>
+					<li><a href="pages/video.html">VIDÉOS</a></li>
+					<li><a href="pages/contact1.php">CONTACT</a></li>
+				</ul>
+			</nav>
+
+			<div class="hamburger" onclick="toggleMenu()">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</header>
+
+	<!-- ==================== SLIDER SECTION ==================== -->
+	<section class="slider-section">
+		<div class="slider-container">
+			<div class="slider">
+				<div class="slide fade">
+					<img src="slider/gedes.jpg" alt="GEDES Accueil" />
+				</div>
+				<div class="slide fade">
+					<img src="slider/cartographie.jpg" alt="Cartographie" />
+					<a href="pages/sig.html" class="slide-text">CARTOGRAPHIE</a>
+				</div>
+				<div class="slide fade">
+					<img src="slider/geotechnique1.jpg" alt="Géotechnique" />
+					<a href="pages/geotechnique.html" class="slide-text">GÉOTECHNIQUE</a>
+				</div>
+				<div class="slide fade">
+					<img src="slider/topographie.jpg" alt="Topographie" />
+					<a href="pages/topographie.html" class="slide-text">TOPOGRAPHIE</a>
+				</div>
+				<div class="slide fade">
+					<img src="slider/electrification.jpg" alt="Électrification" />
+					<a href="pages/electrification.html" class="slide-text">ÉLECTRIFICATION</a>
+				</div>
+				<div class="slide fade">
+					<img src="slider/bathymetrie.jpg" alt="Bathymétrie" />
+					<a href="pages/bathymetrie.html" class="slide-text">BATHYMÉTRIE</a>
+				</div>
+				<div class="slide fade">
+					<img src="slider/ingenierie.jpg" alt="Ingénierie" />
+					<a href="pages/ingenierie.html" class="slide-text">INGÉNIERIE</a>
+				</div>
+				<div class="slide fade">
+					<img src="slider/telecommunication.jpg" alt="Ingénierie Télécom" />
+					<a href="pages/telecommunication.html" class="slide-text">INGÉNIERIE TÉLÉCOM</a>
+				</div>
+				<div class="slide fade">
+					<img src="slider/teledetection.jpg" alt="Télédétection" />
+					<a href="pages/teledetection.html" class="slide-text">TÉLÉDÉTECTION</a>
+				</div>
+				<div class="slide fade">
+					<img src="slider/reseau.jpg" alt="Détection de Réseaux" />
+					<a href="pages/reseaux.html" class="slide-text">DÉTECTION DE RÉSEAUX</a>
+				</div>
+				<div class="slide fade">
+					<img src="slider/travauxp.jpg" alt="Travaux Publics" />
+					<a href="pages/travauxp.html" class="slide-text">TRAVAUX PUBLICS</a>
+				</div>
+				<div class="slide fade">
+					<img src="slider/terrassement.jpg" alt="Terrassement" />
+					<a href="pages/terassement.html" class="slide-text">TERRASSEMENT</a>
+				</div>
+			</div>
+
+			<!-- Slider Controls -->
+			<button class="slider-btn prev" onclick="changeSlide(-1)">
+				<i class="fas fa-chevron-left"></i>
+			</button>
+			<button class="slider-btn next" onclick="changeSlide(1)">
+				<i class="fas fa-chevron-right"></i>
+			</button>
+
+			<!-- Slider Dots -->
+			<div class="slider-dots">
+				<span class="dot" onclick="currentSlide(0)"></span>
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+				<span class="dot" onclick="currentSlide(5)"></span>
+				<span class="dot" onclick="currentSlide(6)"></span>
+				<span class="dot" onclick="currentSlide(7)"></span>
+				<span class="dot" onclick="currentSlide(8)"></span>
+				<span class="dot" onclick="currentSlide(9)"></span>
+				<span class="dot" onclick="currentSlide(10)"></span>
+				<span class="dot" onclick="currentSlide(11)"></span>
+			</div>
+		</div>
+	</section>
+
+	<!-- ==================== ABOUT SECTION ==================== -->
+	<section class="about">
+		<h2 class="section-title">Qui sommes-nous ?</h2>
+
+		<div class="about-grid">
+			<div class="about-text">
+				<h3>GEDES International</h3>
+				<p><strong>Geo-Engineering Design and Surveying</strong></p>
+				<p>Un bureau d'études spécialisé en topographie, géodésie et géomatique avec une présence en Côte d'Ivoire et en France.</p>
+				<p>Nous intervenons en phase conception, mise en œuvre et évaluation des projets d'infrastructures complexes.</p>
+				<p>Nos ingénieurs et techniciens maîtrisent l'ensemble des techniques d'acquisition et de traitement des données à référence spatiale.</p>
+			</div>
+
+			<div class="stats">
+				<div class="stat-card">
+					<h4>15+</h4>
+					<p>Années d'expérience</p>
+				</div>
+				<div class="stat-card">
+					<h4>500+</h4>
+					<p>Projets réalisés</p>
+				</div>
+				<div class="stat-card">
+					<h4>100%</h4>
+					<p>Satisfaction client</p>
+				</div>
+				<div class="stat-card">
+					<h4>50+</h4>
+					<p>Experts qualifiés</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ==================== SERVICES SECTION - 8 EXPERTISES TECHNIQUES ==================== -->
+	<section class="services">
+		<h2 class="section-title">Nos Expertises Techniques</h2>
+
+		<div class="services-grid">
+			<a href="pages/topographie.html" class="service-card">
+				<div class="service-icon">
+					<i class="fas fa-map-pin"></i>
+				</div>
+				<h3>Topographie</h3>
+				<p>Levés précis et cartographie haute résolution pour tous vos projets d'infrastructure</p>
+			</a>
+
+			<a href="pages/bathymetrie.html" class="service-card">
+				<div class="service-icon">
+					<i class="fas fa-water"></i>
+				</div>
+				<h3>Bathymétrie</h3>
+				<p>Sondages et cartographie des fonds marins et fluviaux</p>
+			</a>
+
+			<a href="pages/travauxp.html" class="service-card">
+				<div class="service-icon">
+					<i class="fas fa-road"></i>
+				</div>
+				<h3>Travaux Publics</h3>
+				<p>Solutions complètes pour infrastructures routières et ouvrages publics</p>
+			</a>
+
+			<a href="pages/batiment.html" class="service-card">
+				<div class="service-icon">
+					<i class="fas fa-building"></i>
+				</div>
+				<h3>Bâtiment</h3>
+				<p>Études et relevés pour projets de construction et rénovation</p>
+			</a>
+
+			<a href="pages/relevea.html" class="service-card">
+				<div class="service-icon">
+					<i class="fas fa-ruler-combined"></i>
+				</div>
+				<h3>Relevé d'Architecture</h3>
+				<p>Relevés précis de bâtiments existants pour rénovation et documentation</p>
+			</a>
+
+			<a href="pages/geodesie.html" class="service-card">
+				<div class="service-icon">
+					<i class="fas fa-globe"></i>
+				</div>
+				<h3>Géodésie</h3>
+				<p>Mesures géométriques terrestres et positionnement satellite de haute précision</p>
+			</a>
+
+			<a href="pages/electrification.html" class="service-card">
+				<div class="service-icon">
+					<i class="fas fa-bolt"></i>
+				</div>
+				<h3>Électrification</h3>
+				<p>Levés et études pour réseaux électriques et télécommunications</p>
+			</a>
+
+			<a href="pages/terassement.html" class="service-card">
+				<div class="service-icon">
+					<i class="fas fa-mountain"></i>
+				</div>
+				<h3>Terrassement</h3>
+				<p>Calcul de volumes et suivi des terrassements pour chantiers</p>
+			</a>
+		</div>
+	</section>
+
+	<!-- ==================== PARTNERS SECTION ==================== -->
+	<section class="partners">
+		<h2 class="section-title">Nos Partenaires</h2>
+		<div class="partners-carousel-container">
+			<div class="partners-carousel">
+				<div class="partner-item">
+					<img src="image/im1.jpg" alt="Partenaire 1">
+				</div>
+				<div class="partner-item">
+					<img src="image/im2.jpg" alt="Partenaire 2">
+				</div>
+				<div class="partner-item">
+					<img src="image/im3.jpg" alt="Partenaire 3">
+				</div>
+				<div class="partner-item">
+					<img src="image/im4.jpg" alt="Partenaire 4">
+				</div>
+				<div class="partner-item">
+					<img src="image/im5.jpg" alt="Partenaire 5">
+				</div>
+				<div class="partner-item">
+					<img src="image/im6.jpg" alt="Partenaire 6">
+				</div>
+				<div class="partner-item">
+					<img src="image/im7.jpg" alt="Partenaire 7">
+				</div>
+				<div class="partner-item">
+					<img src="image/im8.jpg" alt="Partenaire 8">
+				</div>
+				<div class="partner-item">
+					<img src="image/im9.jpg" alt="Partenaire 9">
+				</div>
+				<div class="partner-item">
+					<img src="image/im10.jpg" alt="Partenaire 10">
+				</div>
+				<div class="partner-item">
+					<img src="image/im11.jpg" alt="Partenaire 11">
+				</div>
+				<div class="partner-item">
+					<img src="image/im12.jpg" alt="Partenaire 12">
+				</div>
+				<div class="partner-item">
+					<img src="image/im13.jpg" alt="Partenaire 13">
+				</div>
+				<div class="partner-item">
+					<img src="image/im14.jpg" alt="Partenaire 14">
+				</div>
+				<div class="partner-item">
+					<img src="image/im15.jpg" alt="Partenaire 15">
+				</div>
+				<div class="partner-item">
+					<img src="image/im16.jpg" alt="Partenaire 16">
+				</div>
+				<div class="partner-item">
+					<img src="image/im17.jpg" alt="Partenaire 17">
+				</div>
+				<div class="partner-item">
+					<img src="image/im18.jpg" alt="Partenaire 18">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ==================== CTA SECTION ==================== -->
+	<section class="cta-section">
+		<h2>Prêt à démarrer votre projet ?</h2>
+		<p>Contactez nos experts pour une consultation gratuite et découvrez comment nous pouvons aider votre entreprise</p>
+		<a href="pages/contact1.php" class="cta-button">Nous contacter</a>
+	</section>
+
+	<!-- ==================== FOOTER ==================== -->
+	<footer>
+		<div class="footer-content">
+			<div class="footer-column">
+				<h3>GEDES International</h3>
+				<p><strong>Geo-Engineering Design and Surveying</strong></p>
+				<p>Un bureau d'études spécialisé en topographie, géodésie et géomatique de renommée internationale.</p>
+			</div>
+
+			<div class="footer-column">
+				<h3>Contact</h3>
+				<p><i class="fas fa-map-marker-alt"></i> Siège Abidjan: Riviera Palmeraie</p>
+				<p>01 BP 6116 Abidjan 01</p>
+				<p><i class="fas fa-phone"></i> Tel: (+225) 27 22 51 24 93</p>
+				<p><i class="fas fa-mobile-alt"></i> Mobile: (+225) 07 77 10 11 11</p>
+			</div>
+
+			<div class="footer-column">
+				<h3>Services Principaux</h3>
+				<ul>
+					<li><a href="pages/topographie.html">Topographie</a></li>
+					<li><a href="pages/geodesie.html">Géodésie</a></li>
+					<li><a href="pages/bathymetrie.html">Bathymétrie</a></li>
+					<li><a href="pages/geotechnique.html">Géotechnique</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-column">
+				<h3>Liens Utiles</h3>
+				<ul>
+					<li><a href="pages/reference.html">Références</a></li>
+					<li><a href="pages/video.html">Vidéos</a></li>
+					<li><a href="pages/contact1.php">Contact</a></li>
+					<li><a href="mailto:gedes@gedes-international.com">Email</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p>&copy; 2024 GEDES International - Tous droits réservés</p>
+			<p><em>Design & Development Excellence</em></p>
+		</div>
+	</footer>
+
+	<!-- ==================== SCRIPTS ==================== -->
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

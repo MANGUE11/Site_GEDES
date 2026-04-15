@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta charset="utf-8">
+	<title>Contact</title>
+	<link href="icone.png" rel="shortcut icon" type="images/png" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="contact/css/formulaire.css" rel="stylesheet" />
+	<link href="css/stylesmenumobile.css" rel="stylesheet" />
+	<link href="css/stylesmenu.css" media="screen and (min-width:1201px)" rel="stylesheet" />
+</head>
+<body>
+<header class="header" id="navbar">
+<div class="logobar">
+<h1 class="logo"><img alt="logo GEDES" src="../image/logo.png" /></h1>
+
+<h2></h2>
+
+<div class="titrelogo"><span class="title">GEDES International</span></div>
+<span class="title">Geo-Engineering DEsign and Surveying</span>
+
+<div class="titrelogo2"><span class="title">ETUDES TECHNIQUES &amp; INGENIERIE</span></div>
+</div>
+
+<div id="hambuger">
+<nav>
+<div class="menu" id="hambuger-content">
+<ul>
+	<li class="mnu"><a href="../index.html">ACCUEIL</a></li>
+	<li class="mnu" id="smenu" onclick="ouvrirFermerSpoiler(this);"><a href="#">SERVICES<span id="plus">+</span> </a>
+	<ul class="submenu">
+		<li><a href="topographie.html">Topographie</a></li>
+		<li><a href="geodesie.html">G&eacute;od&eacute;sie</a></li>
+		<li><a href="bathymetrie.html">Bathym&eacute;trie</a></li>
+		<li><a href="geotechnique.html">G&eacute;otechnique</a></li>
+		<li><a href="relevea.html">Relev&eacute; d&#39;architecture</a></li>
+		<li><a href="telecommunication.html">T&eacute;l&eacute;communication</a></li>
+		<li><a href="teledetection.html">T&eacute;l&eacute;d&eacute;tection</a></li>
+		<li><a href="reseaux.html">D&eacute;tection de R&eacute;seaux Souterrains</a></li>
+		<li><a href="sig.html">cartographie SIG</a></li>
+		<li><a href="photogrametrie.html">Photogrammetrie</a></li>
+		<li><a href="VRD.html">Ma&icirc;trise d&#39;oeuvre VRD</a></li>
+		<li><a href="travauxp.html">Travaux Publics</a></li>
+		<li><a href="batiment.html">B&acirc;timent</a></li>
+		<li><a href="terassement.html">Terrassement</a></li>
+		<li><a href="ingenierie.html">Ing&eacute;nierie</a></li>
+		<li><a href="electrification.html">Electrification</a></li>
+	</ul>
+	</li>
+	<li class="mnu"><a href="reference.html">R&Eacute;F&Eacute;RENCES</a></li>
+	<li class="mnu"><a href="video.html">VID&Eacute;OS</a></li>
+	<li class="mnu"><a href="contact1.php">CONTACT</a></li>
+</ul>
+</div>
+</nav>
+<button id="hambuger-button">☰</button>
+
+<div id="hambuger-sidebar">
+<div id="hambuger-sidebar-header"></div>
+
+<div id="hambuger-sidebar-body"></div>
+</div>
+
+<div id="hambuger-overlay"></div>
+</div>
+</header>
+
+<div class="fond">
+<div class="contactbar">
+<p class="contact1">CONTACT</p>
+</div>
+
+<div class="paragraphe">
+<p>Un projet? Une question? Nous vous remercions de bien vouloir remplir ce formulaire ci-dessous et nous vous recontacterons dans les plus brefs d&eacute;lais.</p>
+</div>
+</div>
+
+<section class="ombre contenuGalerie" id="formulaire1">
+<form action="confirmation.php" class="formformulaire" method="POST"><br />
+<br />
+<input class="entretexte" name="prenom" placeholder="Prénom*" type="text" /> <input class="entretexte" name="nom" placeholder="Nom*" type="text" /><br />
+<input class="entretexte" name="email" placeholder="Adresse électronique*" type="text" /> <input class="entretexte" name="numero" placeholder="Numéro de téléphone*" type="text" /><br />
+<select class="section" name="demande"><option>Demande d&#39;information</option><option>Offre commerciale</option><option>Autre demande</option> </select><textarea class="entremessage" name="message" placeholder="Votre message*"></textarea>
+
+<div class="envoyer"><input class="submit" type="submit" value="Envoyer" /></div>
+</form>
+</section>
+
+<div class="contact">
+<section class="information">
+<div class="contactinfo" id="gauche">
+<h1 class="titrecontact">GEDES International</h1>
+
+<p>Si&egrave;ge Abidjan: Riviera Palmeraie<br />
+01 BP 6116 Abidjan 01<br />
+Tel/Fax:(+225) 27 22 51 24 93<br />
+Mobile:(+225) 07 77 10 11 11&nbsp;/ 01 03 77 74 75<br />
+Email: gedes@gedes-international.com</p>
+</div>
+
+<div class="contactinfo" id="nousecrire">
+<p id="ecrire"><a class="lien2" href="contact.html">Nous &eacute;crire</a></p>
+</div>
+
+<div class="contactinfo" id="droite">
+<div class="contgauche"><img src="batiment/image/logo1.png" /></div>
+
+<div class="contgauche">
+<h2></h2>
+
+<div class="titrelogocontact"><span class="title">GEDES International</span></div>
+<br />
+<span class="title">Geo-Engineering DEsign and Surveying</span>
+
+<div class="titrelogocontact2"><span class="title">ETUDES TECHNIQUES &amp; INGENIERIE</span></div>
+</div>
+</div>
+</section>
+</div>
+
+<footer class="ombre">&copy; 2019 GEDES International - Tous droits r&eacute;serv&eacute;s <em><font>- Design by Bacon Francis</font></em></footer>
+<script src="../css/stylemenu.js"></script><script type="text/javascript" src="../css/menu.js"></script></body>
+</html>

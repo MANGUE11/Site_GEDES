@@ -1,0 +1,5 @@
+Options -Indexes 
+
+RewriteEngine On
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)$ index.php?id=$1&ver=$2&graphBy=$3&page=$4&start=$5&end=$6
+RewriteRule ^api.(xml|json)$ api.php?type=$1

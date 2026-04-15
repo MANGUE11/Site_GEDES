@@ -1,0 +1,29 @@
+.slideshow_container{
+	width: 100%;
+	position:relative;
+	margin: auto;
+}
+#slider{
+	position: relative;
+}
+.imag{
+	width: 100%;
+}
+
+button{
+	padding: 20px;
+	border:none;
+	background:#37f;
+	font-size: 30px;
+	color: white;
+	position:absolute;
+	top:40%; 
+}
+.next{
+	border-radius: 10px 0px 0px 10px;
+	margin-left:96%;
+}
+.prew{
+	border-radius: 0px 10px 10px 0px;
+	
+}

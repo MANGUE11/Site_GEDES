@@ -1,0 +1,16 @@
+.contenu{
+	margin: auto;
+	width: 90%;
+	height: 300px;
+	margin-top: 50px;
+}
+#paragraphe{
+	height: 200px;
+	font-size: 20px;
+    color: #696969;
+}
+#titre{
+	font-size: 25px;
+	color: #0093c9;
+	width: 500px;
+}

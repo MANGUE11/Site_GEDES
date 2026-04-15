@@ -1,0 +1,252 @@
+body{ 
+	font-family: "Roboto Condensed",sans-serif;
+	margin:0;
+	padding: 0;
+}
+.titrelogo{
+    color:black;
+    text-shadow:1px 2px 1px grey;
+    font-size:27px;
+    line-height:20px;
+}
+
+.titrelogo2{
+    
+    font-size:14.8px;
+    line-height:30px;
+}
+.titrelogocontact{
+  color:fff;
+  text-shadow:1px 2px 1px black;
+  font-size:41px;
+}
+.titrelogocontact2{
+    font-size:22px;
+    line-height:48px;
+}
+
+
+#conteneur{
+	z-index: 2;
+	width:90%;
+	height: auto;
+	margin:auto;
+	margin-top: 110px;
+	margin-bottom: 100px;
+}
+.presentation{
+	font-family: "Roboto Condensed",sans-serif;
+	font-size: 22px;
+	text-align: justify;
+	color: #333 !important;
+}
+.entete{
+	font-weight: bold;
+	text-align: center;
+	color: #0093c9;
+	font-size: 25px;
+}
+.decalage{
+	text-indent: 30px;
+}
+strong{
+	color: #0093c9;
+}
+
+.annuleFloat{clear:both;}
+
+/* -------Styles header ---------*/
+header h1{
+	margin-top: 5px;
+	vertical-align: top;
+	margin-left: 30px;
+}
+@media screen and (min-width: 1220px){
+.titrelogo{
+    color:black;
+    text-shadow:1px 2px 1px white;
+    font-size:27px;
+}
+.titrelogo2{
+    font-size:14.8px;
+}
+.titrelogocontact{
+  color:fff;
+  text-shadow:1px 2px 1px black;
+  font-size:41px;
+}
+.titrelogocontact2{
+    font-size:22px;
+    line-height:48px;
+}
+
+	#droite{
+	float: right;
+	margin-right: 30px;
+}
+#gauche{
+	font-weight: bold;
+	margin-left: 30px;
+}
+#nousecrire{
+	margin-left: 100px;
+	width: 200px;
+}
+#ecrire{
+	margin: auto;
+	border:1px solid white;
+	border-radius: 10px;
+	margin-top: 90px;
+	text-align: center;
+	font-size: 18px;
+	width: 120px;
+}
+#ecrire:hover{
+	background-color:#0093c9; 
+}
+.lien2{
+	text-decoration: none;
+}
+
+.contact{
+	width: 100%;
+	height: 250px;
+	background-color:#677179; 
+}
+.information{
+	margin: auto;
+	width: 1200px;
+	height: 250px;
+}
+.contactinfo{
+	margin: auto;
+	top: 15px;
+	position: relative;
+	width: auto;
+	height: 230px;
+	float: left;
+}
+.contactinfo p{
+	font-family: arial;
+	color: white;
+	font-size: 15px;
+	line-height: 25px;
+}
+.titrecontact{
+	text-decoration-style: none;
+	font-size: 22px;
+	font-family: arial;
+	color: white;
+}
+.contactinfo img{
+	margin-top: 30px;
+	vertical-align: top;
+}
+.contactinfo img{display:inline-block;}
+.contactinfo h2{
+	color: white;
+	line-height: 18px;
+	margin-top: 40px;
+	display:inline-block;
+	font-size:21px;
+	font-weight: bold;
+}
+.contgauche{
+	height: 200px;
+	position: relative;
+	float: left;
+}
+
+section footer{
+	font-style:italic;
+	background: transparent;
+}
+footer{
+	font-weight: bold;
+	font-family: arial;
+	text-align: center;
+	height: 25px;
+	background-color: black;
+	color:#555;
+	padding:7px 0;
+	font-size: 16px;
+}
+
+.ombre{box-shadow: 0 0 10px #999;
+}
+}
+@media screen and (max-width: 1219px){
+	
+#gauche{
+	font-weight: bold;
+	margin-left: 28px;
+}
+#nousecrire{
+	margin-top: 28px;
+	width: 190px;
+}
+#ecrire{
+	margin: auto;
+	border:1px solid white;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 33px;
+	width: auto;
+	padding: 5px;
+}
+#ecrire:hover{
+	background-color:#0093c9; 
+}
+.lien2{
+	text-decoration: none;
+}
+
+.contact{
+	width: 100%;
+	height: 500px;
+	background-color:#677179;
+	text-align: center;
+}
+.contactinfo{
+	margin: auto;
+	position: relative;
+	width: auto;
+}
+.contactinfo p{
+	font-family: "Roboto Condensed",sans-serif;
+	color: white;
+	font-size: 40px;
+	line-height: 45px;
+}
+.titrecontact{
+	text-decoration-style: none;
+	font-size: 45px;
+	font-family: "Roboto Condensed",sans-serif;
+	color: white;
+	font-weight: bold;
+}
+#droite{
+	display: none;
+}
+.information{
+	padding-top: 10px;
+}
+
+section footer{
+	font-style:italic;
+	background: transparent;
+}
+footer{
+	font-weight: bold;
+	font-family: arial;
+	text-align: center;
+	height: 40px;
+	background-color: black;
+	color:#555;
+	padding:15px 0;
+	font-size: 27px;
+}
+
+.ombre{box-shadow: 0 0 10px #999;
+}
+}

@@ -1,0 +1,19 @@
+			<button class="prew" onclick="prewImage()">-</button>
+		    <button class="next" onclick="nextImage()">+</button>
+	    </div>
+	    <script type="text/javascript">
+	    	var slider_content=document.getElementbyId('box');
+	    	//placer les images dans un tableau
+	    	var image=['a','b','c','d'];
+	    	var i=image.length;
+	    	//fonction pour suivant
+	    	function nextImage(){
+	    	if (i<image.length){
+	    		i=i+1;
+	    	}else{
+	    		i=1;
+	    	}
+	    	slider_content.innerHTML = "<img src="+image[i-1]+".jpg>";
+	    }
+	    </script>
+

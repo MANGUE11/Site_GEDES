@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit verbose="true" stopOnFailure="true">
+    <testsuites>
+        <testsuite name="Little Software Stats API Tests">
+			<file>./tests/APITest.php</file>
+ 			<file>./tests/ExternalAPITest.php</file>
+        </testsuite>
+		<testsuite name="Little Software Stats Function Tests">
+			<file>./tests/FunctionsTest.php</file>
+		</testsuite>
+    </testsuites>
+	<php>
+		<const name="TRAVISCI" value="1" />
+	</php>
+</phpunit>

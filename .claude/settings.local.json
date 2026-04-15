@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(perl -i -0pe 's|    </div>\\\\n    <nav id=\"mainNav\">|    </div>\\\\n    </a>\\\\n    <nav id=\"mainNav\">|g' c:/wamp64/www/site_GEDES/pages/*.html)"
+    ]
+  }
+}
