@@ -984,6 +984,28 @@ footer {
     display: grid;
   }
 
+  .submenu li {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .submenu li:last-child {
+    border-bottom: none;
+  }
+
+  .submenu li a {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.85rem;
+    padding: 0.7rem 1.25rem;
+    white-space: normal;
+  }
+
+  .submenu li a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    padding-left: 1.75rem;
+  }
+
   /* Slider Responsive */
   .slider {
     height: 350px;

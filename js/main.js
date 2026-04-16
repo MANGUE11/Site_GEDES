@@ -52,14 +52,26 @@ function toggleMenu() {
   nav.classList.toggle('active')
 }
 
-// ==================== SUBMENU TOGGLE (MOBILE) ====================
+// ==================== SUBMENU TOGGLE (MOBILE) — solution robuste ====================
 function toggleSubmenu(event) {
-  if (window.innerWidth <= 768) {
-    event.preventDefault()
-    const li = event.currentTarget
-    li.classList.toggle('active')
-  }
+  // Géré directement par le listener DOMContentLoaded ci-dessous
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('li.smenu > a').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      if (window.innerWidth > 768) return
+      e.preventDefault()
+      e.stopPropagation()
+      const li = link.parentElement
+      const isOpen = li.classList.contains('active')
+      // Ferme tous les autres sous-menus
+      document.querySelectorAll('li.smenu').forEach((el) => el.classList.remove('active'))
+      // Ouvre ou ferme ce sous-menu
+      if (!isOpen) li.classList.add('active')
+    })
+  })
+})
 
 // ==================== CLOSE MENU ON LINK CLICK ====================
 document.querySelectorAll('nav a').forEach((link) => {
@@ -80,13 +92,12 @@ document.querySelectorAll('nav a').forEach((link) => {
 // ==================== SMOOTH SCROLL ====================
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href')
+    if (!href || href === '#') return  // Skip bare # (dropdown toggles)
     e.preventDefault()
-    const target = document.querySelector(this.getAttribute('href'))
+    const target = document.querySelector(href)
     if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      })
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
   })
 })
