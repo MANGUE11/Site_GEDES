@@ -58,6 +58,14 @@ function toggleSubmenu(event) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  function closeAllSubmenus() {
+    document.querySelectorAll('li.smenu').forEach((el) => {
+      el.classList.remove('active')
+      const span = el.querySelector('a > span')
+      if (span) span.textContent = '+'
+    })
+  }
+
   document.querySelectorAll('li.smenu > a').forEach((link) => {
     link.addEventListener('click', (e) => {
       if (window.innerWidth > 768) return
@@ -65,11 +73,20 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation()
       const li = link.parentElement
       const isOpen = li.classList.contains('active')
-      // Ferme tous les autres sous-menus
-      document.querySelectorAll('li.smenu').forEach((el) => el.classList.remove('active'))
-      // Ouvre ou ferme ce sous-menu
-      if (!isOpen) li.classList.add('active')
+      const span = link.querySelector('span')
+      // Ferme tous les sous-menus ouverts
+      closeAllSubmenus()
+      // Si c'était fermé → on l'ouvre
+      if (!isOpen) {
+        li.classList.add('active')
+        if (span) span.textContent = '−'
+      }
     })
+  })
+
+  // Ferme le submenu si on clique en dehors
+  document.addEventListener('click', () => {
+    closeAllSubmenus()
   })
 })
 
