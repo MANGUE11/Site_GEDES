@@ -246,7 +246,7 @@ li.smenu:hover .submenu {
 .slider {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: auto;
   overflow: hidden;
 }
 
@@ -254,7 +254,7 @@ li.smenu:hover .submenu {
   display: none;
   position: relative;
   width: 100%;
-  height: 100%;
+  background: #0d1b2e;
 }
 
 /* Gradient vers le bas comme les sous-pages */
@@ -277,9 +277,11 @@ li.smenu:hover .submenu {
 
 .slide img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  max-height: 680px;
+  object-fit: contain;
   display: block;
+  margin: 0 auto;
 }
 
 .slide-text {
@@ -1012,7 +1014,11 @@ footer {
 
   /* Slider Responsive */
   .slider {
-    height: 350px;
+    height: auto;
+  }
+
+  .slide img {
+    max-height: 420px;
   }
 
   .slider-btn {
@@ -1118,7 +1124,11 @@ footer {
 
   /* Slider Responsive - Mobile */
   .slider {
-    height: 250px;
+    height: auto;
+  }
+
+  .slide img {
+    max-height: 280px;
   }
 
   .slider-btn {
