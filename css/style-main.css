@@ -247,7 +247,6 @@ li.smenu:hover .submenu {
   position: relative;
   width: 100%;
   height: auto;
-  overflow: hidden;
 }
 
 .slide {
@@ -278,10 +277,8 @@ li.smenu:hover .submenu {
 .slide img {
   width: 100%;
   height: auto;
-  max-height: 680px;
   object-fit: contain;
   display: block;
-  margin: 0 auto;
 }
 
 .slide-text {
@@ -1017,10 +1014,6 @@ footer {
     height: auto;
   }
 
-  .slide img {
-    max-height: 420px;
-  }
-
   .slider-btn {
     padding: 12px 15px;
     font-size: 1.2rem;
@@ -1125,10 +1118,6 @@ footer {
   /* Slider Responsive - Mobile */
   .slider {
     height: auto;
-  }
-
-  .slide img {
-    max-height: 280px;
   }
 
   .slider-btn {
