@@ -297,6 +297,44 @@
       </div>
     </section>
 
+    <!-- ==================== POURQUOI NOUS CHOISIR ==================== -->
+    <section class="why-us">
+      <h2 class="section-title">Pourquoi nous choisir ?</h2>
+      <p class="section-subtitle">6 raisons pour lesquelles les plus grands donneurs d'ordre nous font confiance</p>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-award"></i></div>
+          <h3>Expertise reconnue</h3>
+          <p>Plus de 15 ans d'expérience sur des projets d'envergure internationale en Afrique, Europe et Moyen-Orient.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-satellite-dish"></i></div>
+          <h3>Matériel de pointe</h3>
+          <p>GPS de précision centimétrique, drones LiDAR, scanners 3D et stations totales de dernière génération.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-users"></i></div>
+          <h3>Équipe qualifiée</h3>
+          <p>50+ ingénieurs et techniciens certifiés, formés aux meilleures standards métiers nationaux et internationaux.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-globe-africa"></i></div>
+          <h3>Présence internationale</h3>
+          <p>Interventions dans plus de 10 pays : Côte d'Ivoire, Burkina Faso, Guinée Équatoriale, Arabie Saoudite, France…</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-clock"></i></div>
+          <h3>Respect des délais</h3>
+          <p>Organisation rigoureuse et suivi en temps réel de l'avancement pour une livraison dans les temps contractuels.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-certificate"></i></div>
+          <h3>Qualité certifiée</h3>
+          <p>Méthodes conformes aux normes ISO, NF et aux référentiels des bailleurs internationaux (Banque Mondiale, BAD).</p>
+        </div>
+      </div>
+    </section>
+
     <!-- ==================== PARTNERS SECTION ==================== -->
     <section class="partners">
       <h2 class="section-title">Nos Partenaires</h2>
@@ -357,6 +395,61 @@
             <img src="image/im18.jpg" alt="Partenaire 18" />
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ==================== RÉFÉRENCES HOMEPAGE ==================== -->
+    <section class="home-refs">
+      <h2 class="section-title">Nos Réalisations</h2>
+      <p class="section-subtitle">500+ projets menés à bien à travers l'Afrique, l'Europe et le Moyen-Orient</p>
+      <div class="home-refs-grid">
+        <div class="home-ref-card">
+          <img src="pages/reference/image/14.png" alt="Métro d'Abidjan" />
+          <div class="home-ref-overlay">
+            <span class="home-ref-country">Côte d'Ivoire</span>
+            <p>Projet Métro d'Abidjan — Relevé topographique</p>
+          </div>
+        </div>
+        <div class="home-ref-card">
+          <img src="pages/reference/image/2.png" alt="Route Burkina Faso" />
+          <div class="home-ref-overlay">
+            <span class="home-ref-country">Burkina Faso</span>
+            <p>Réhabilitation de 230 km de tronçon routier Bobo-Dioulasso – Sakoinsé</p>
+          </div>
+        </div>
+        <div class="home-ref-card">
+          <img src="pages/reference/image/7.png" alt="Université PNAU Arabie Saoudite" />
+          <div class="home-ref-overlay">
+            <span class="home-ref-country">Riyad — Arabie Saoudite</span>
+            <p>Construction de l'Université Princesse Noura (PNAU)</p>
+          </div>
+        </div>
+        <div class="home-ref-card">
+          <img src="pages/reference/image/3.png" alt="Guinée Équatoriale Malabo" />
+          <div class="home-ref-overlay">
+            <span class="home-ref-country">Guinée Équatoriale</span>
+            <p>Création d'un canevas géodésique urbain de l'agglomération de Malabo</p>
+          </div>
+        </div>
+        <div class="home-ref-card">
+          <img src="pages/reference/image/16.png" alt="Électrification Worodougou" />
+          <div class="home-ref-overlay">
+            <span class="home-ref-country">Côte d'Ivoire</span>
+            <p>Projet d'électrification des villages du Worodougou</p>
+          </div>
+        </div>
+        <div class="home-ref-card">
+          <img src="pages/reference/image/6.png" alt="Route Nationale 3 France" />
+          <div class="home-ref-overlay">
+            <span class="home-ref-country">Livry-Gargan — France</span>
+            <p>Réhabilitation de la Route Nationale 3</p>
+          </div>
+        </div>
+      </div>
+      <div class="home-refs-cta">
+        <a href="pages/reference.html" class="home-refs-btn">
+          <i class="fas fa-arrow-right"></i> Voir toutes nos références
+        </a>
       </div>
     </section>
 
@@ -557,6 +650,14 @@
       animateEls('.stat-card',   'scale',      0.1, 0)
       // Services cards
       animateEls('.service-card', 'scale', 0.07, 0)
+      // Why us
+      animateEls('.why-us .section-title',   'fade-up', 0, 0)
+      animateEls('.why-us .section-subtitle','fade-up', 0, 0.08)
+      animateEls('.why-card', 'scale', 0.08, 0)
+      // Home refs
+      animateEls('.home-refs .section-title',    'fade-up', 0, 0)
+      animateEls('.home-refs .section-subtitle', 'fade-up', 0, 0.08)
+      animateEls('.home-ref-card', 'scale', 0.07, 0)
       // Partners
       animateEls('.partners-carousel-container', 'fade-up', 0, 0.1)
       // Contact

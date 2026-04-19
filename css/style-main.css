@@ -1377,3 +1377,207 @@ footer {
     }
   }
 }
+
+/* ==================== POURQUOI NOUS CHOISIR ==================== */
+.why-us {
+  padding: 5rem 2rem;
+  background: #f8fafc;
+}
+
+.why-us .section-title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.why-us .section-subtitle {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.why-card {
+  background: #fff;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.why-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 8px 28px rgba(0, 147, 201, 0.12);
+  transform: translateY(-4px);
+}
+
+.why-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.why-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.why-card p {
+  font-size: 0.88rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 580px) {
+  .why-grid { grid-template-columns: 1fr; }
+}
+
+/* ==================== RÉFÉRENCES HOMEPAGE ==================== */
+.home-refs {
+  padding: 5rem 2rem;
+  background: linear-gradient(160deg, #021437 0%, #013a6b 100%);
+}
+
+.home-refs .section-title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.home-refs .section-subtitle {
+  text-align: center;
+  color: rgba(255,255,255,0.65);
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-refs-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.home-ref-card {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: #0a2540;
+  cursor: default;
+  aspect-ratio: 4/3;
+}
+
+.home-ref-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.home-ref-card:hover img {
+  transform: scale(1.07);
+}
+
+.home-ref-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(2,20,55,0.92) 0%, rgba(2,20,55,0.2) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.25rem 1.1rem;
+  transition: background 0.3s;
+}
+
+.home-ref-card:hover .home-ref-overlay {
+  background: linear-gradient(to top, rgba(0,147,201,0.88) 0%, rgba(2,20,55,0.35) 70%, transparent 100%);
+}
+
+.home-ref-country {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-light);
+  margin-bottom: 0.3rem;
+}
+
+.home-ref-card:hover .home-ref-country {
+  color: rgba(255,255,255,0.85);
+}
+
+.home-ref-overlay p {
+  color: #fff;
+  font-size: 0.83rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.home-refs-cta {
+  text-align: center;
+}
+
+.home-refs-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.4);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  letter-spacing: 0.04em;
+}
+
+.home-refs-btn:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,147,201,0.35);
+}
+
+@media (max-width: 900px) {
+  .home-refs-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 580px) {
+  .home-refs-grid { grid-template-columns: 1fr; }
+  .home-ref-card { aspect-ratio: 16/9; }
+}
