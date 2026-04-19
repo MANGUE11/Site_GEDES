@@ -530,6 +530,40 @@
         e.target.reset()
         fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
       }
+
+      // ===== SCROLL ANIMATIONS =====
+      const homeAnim = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-visible')
+            homeAnim.unobserve(e.target)
+          }
+        })
+      }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' })
+
+      function animateEls(selector, type, stagger = 0, baseDelay = 0) {
+        document.querySelectorAll(selector).forEach((el, i) => {
+          el.dataset.anim = type
+          el.style.transitionDelay = (baseDelay + i * stagger) + 's'
+          homeAnim.observe(el)
+        })
+      }
+
+      // Sections titles
+      animateEls('.section-title', 'fade-up', 0, 0)
+      // About
+      animateEls('.about-text',  'fade-left',  0, 0.05)
+      animateEls('.stats',       'fade-right', 0, 0.1)
+      animateEls('.stat-card',   'scale',      0.1, 0)
+      // Services cards
+      animateEls('.service-card', 'scale', 0.07, 0)
+      // Partners
+      animateEls('.partners-carousel-container', 'fade-up', 0, 0.1)
+      // Contact
+      animateEls('.contact-info',     'fade-left',  0, 0.05)
+      animateEls('.contact-form-box', 'fade-right', 0, 0.1)
+      // CTA
+      animateEls('.cta-section', 'fade-up', 0, 0)
     </script>
   </body>
 </html>

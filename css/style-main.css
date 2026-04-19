@@ -595,20 +595,42 @@ li.smenu:hover .submenu {
 /* ==================== SERVICES SECTION ==================== */
 .services {
   padding: 5rem 2rem;
-  background: var(--light-bg);
-  max-width: 1400px;
-  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  background: url('../slider/topographie.jpg') center / cover fixed;
+}
+
+.services::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 20, 55, 0.78);
+  z-index: 0;
+}
+
+.services .section-title {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.services .section-title::after {
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .services-grid {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  margin: 3rem auto 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin-top: 3rem;
 }
 
 .service-card {
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(6px);
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
@@ -904,6 +926,26 @@ footer {
   50% {
     transform: translateY(-20px);
   }
+}
+
+/* ==================== SCROLL ANIMATIONS ==================== */
+[data-anim] {
+  opacity: 0;
+  transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+[data-anim="fade-up"]    { transform: translateY(55px); }
+[data-anim="fade-down"]  { transform: translateY(-40px); }
+[data-anim="fade-left"]  { transform: translateX(-55px); }
+[data-anim="fade-right"] { transform: translateX(55px); }
+[data-anim="scale"]      { transform: scale(0.82); }
+[data-anim="fade-up"].is-visible,
+[data-anim="fade-down"].is-visible,
+[data-anim="fade-left"].is-visible,
+[data-anim="fade-right"].is-visible,
+[data-anim="scale"].is-visible {
+  opacity: 1;
+  transform: none;
 }
 
 /* ==================== RESPONSIVE - TABLET ==================== */
