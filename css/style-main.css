@@ -980,6 +980,10 @@ footer {
     font-size: 0.78rem;
     padding: 0.55rem 0.75rem;
   }
+
+  .slider-section {
+    min-height: 54vw;
+  }
 }
 
 /* ==================== RESPONSIVE - TABLET ==================== */
@@ -1086,6 +1090,10 @@ footer {
   }
 
   /* Slider Responsive */
+  .slider-section {
+    min-height: 62vw;
+  }
+
   .slider {
     height: auto;
   }
@@ -1192,6 +1200,10 @@ footer {
   }
 
   /* Slider Responsive - Mobile */
+  .slider-section {
+    min-height: 72vw;
+  }
+
   .slider {
     height: auto;
   }
