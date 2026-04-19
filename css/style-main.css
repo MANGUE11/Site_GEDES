@@ -948,6 +948,40 @@ footer {
   transform: none;
 }
 
+/* ==================== RESPONSIVE - TABLETTE PORTRAIT (769–1024px) ==================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 0.35rem 0;
+  }
+
+  .navbar {
+    padding: 0 1.25rem;
+    gap: 1rem;
+  }
+
+  .logo-section img {
+    height: 36px;
+  }
+
+  .brand-text h1 {
+    font-size: 1.05rem;
+  }
+
+  .brand-text p {
+    font-size: 0.62rem;
+  }
+
+  .brand-text .brand-sub {
+    font-size: 0.55rem;
+    letter-spacing: 0.05em;
+  }
+
+  nav a {
+    font-size: 0.78rem;
+    padding: 0.55rem 0.75rem;
+  }
+}
+
 /* ==================== RESPONSIVE - TABLET ==================== */
 @media (max-width: 768px) {
   .navbar {
