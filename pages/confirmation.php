@@ -19,7 +19,7 @@
   <div class="navbar">
    <a href="../index.html" class="logo-link">
     <div class="logo-section">
-     <img src="../image/logo.png" alt="logo GEDES" />
+     <img src="../image/logoFinale.png" alt="logo GEDES" />
      <div class="brand-text">
       <h1>GEDES International</h1>
       <p>Geo-Engineering DEsign and Surveying</p>
