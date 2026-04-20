@@ -461,7 +461,7 @@ li.smenu:hover .submenu {
 
 /* ==================== ABOUT SECTION ==================== */
 .about {
-  padding: 5rem 2rem;
+  padding: 2rem 2rem 4rem;
   background: var(--white);
   max-width: 1400px;
   margin: 0 auto;
@@ -1122,7 +1122,7 @@ footer {
   }
 
   .about {
-    padding: 3rem 1.5rem;
+    padding: 1.5rem 1.5rem 3rem;
   }
 
   .about-grid {
@@ -1249,7 +1249,7 @@ footer {
   }
 
   .about {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem 2rem;
   }
 
   .about-text h3 {
