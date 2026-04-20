@@ -157,9 +157,9 @@ window.addEventListener('resize', () => {
 window.addEventListener('scroll', () => {
   const header = document.querySelector('header')
   if (window.scrollY > 50) {
-    header.style.boxShadow = '0 15px 35px rgba(8, 145, 178, 0.2)'
+    header.style.boxShadow = '0 4px 24px rgba(0,0,0,0.12)'
   } else {
-    header.style.boxShadow = '0 10px 30px rgba(8, 145, 178, 0.1)'
+    header.style.boxShadow = '0 2px 16px rgba(0,0,0,0.08)'
   }
 })
 

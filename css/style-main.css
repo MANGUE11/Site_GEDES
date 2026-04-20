@@ -27,16 +27,13 @@ body {
 
 /* ==================== HEADER & NAVIGATION ==================== */
 header {
-  background: linear-gradient(
-    135deg,
-    var(--primary) 0%,
-    var(--primary-dark) 100%
-  );
-  padding: 0.6rem 0;
+  background: #ffffff;
+  padding: 0.35rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: var(--shadow);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid #e5e7eb;
   transition: all 0.3s ease;
 }
 
@@ -63,31 +60,31 @@ header {
 }
 
 .logo-section img {
-  height: 50px;
+  height: 58px;
   width: auto;
   animation: slideInLeft 0.6s ease;
 }
 
 .brand-text h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--secondary);
   line-height: 1.2;
   animation: slideInLeft 0.6s ease 0.1s both;
 }
 
 .brand-text p {
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.9);
-  font-weight: 300;
-  letter-spacing: 0.05em;
+  font-size: 0.68rem;
+  color: #6b7280;
+  font-weight: 400;
+  letter-spacing: 0.04em;
   animation: slideInLeft 0.6s ease 0.2s both;
 }
 
 .brand-text .brand-sub {
-  font-size: 0.68rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.6rem;
+  color: var(--primary);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -107,11 +104,11 @@ nav li {
 }
 
 nav a {
-  color: var(--white);
+  color: var(--secondary);
   text-decoration: none;
-  padding: 0.75rem 1.25rem;
+  padding: 0.6rem 1rem;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   border-radius: 8px;
   transition: all 0.3s ease;
   position: relative;
@@ -124,13 +121,14 @@ nav a::after {
   left: 50%;
   width: 0;
   height: 2px;
-  background: var(--white);
+  background: var(--primary);
   transform: translateX(-50%);
   transition: width 0.3s ease;
 }
 
 nav a:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--light-bg);
+  color: var(--primary);
 }
 
 nav a:hover::after {
@@ -138,7 +136,9 @@ nav a:hover::after {
 }
 
 nav a.active {
-  border-bottom: 3px solid var(--white);
+  color: var(--primary);
+  font-weight: 600;
+  border-bottom: 3px solid var(--primary);
 }
 
 nav a.active::after {
@@ -209,7 +209,7 @@ li.smenu:hover .submenu {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: var(--white);
+  background: var(--secondary);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -960,25 +960,25 @@ footer {
   }
 
   .logo-section img {
-    height: 36px;
+    height: 48px;
   }
 
   .brand-text h1 {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 
   .brand-text p {
-    font-size: 0.62rem;
+    font-size: 0.6rem;
   }
 
   .brand-text .brand-sub {
-    font-size: 0.55rem;
+    font-size: 0.52rem;
     letter-spacing: 0.05em;
   }
 
   nav a {
-    font-size: 0.78rem;
-    padding: 0.55rem 0.75rem;
+    font-size: 0.76rem;
+    padding: 0.5rem 0.65rem;
   }
 }
 
@@ -1000,20 +1000,18 @@ footer {
   nav {
     display: none;
     position: fixed;
-    top: 70px;
+    top: 60px;
     left: 0;
     right: 0;
-    background: linear-gradient(
-      135deg,
-      var(--primary) 0%,
-      var(--primary-dark) 100%
-    );
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
     flex-direction: column;
-    padding: 2rem;
+    padding: 1.5rem;
     gap: 1rem;
     z-index: 999;
     animation: slideInDown 0.3s ease;
-    max-height: calc(100vh - 70px);
+    max-height: calc(100vh - 60px);
     overflow-y: auto;
   }
 
@@ -1045,10 +1043,10 @@ footer {
   .submenu {
     position: static;
     display: none;
-    background: rgba(0, 0, 0, 0.1);
+    background: #f0f9fa;
     box-shadow: none;
     margin-top: 0;
-    border-radius: 0;
+    border-radius: 8px;
     width: fit-content;
     min-width: 200px;
     margin-left: auto;
@@ -1063,7 +1061,7 @@ footer {
 
   .submenu li {
     border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(0, 147, 201, 0.1);
   }
 
   .submenu li:last-child {
@@ -1071,7 +1069,7 @@ footer {
   }
 
   .submenu li a {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text);
     font-size: 0.85rem;
     padding: 0.7rem 1.25rem;
     white-space: nowrap;
@@ -1079,8 +1077,8 @@ footer {
   }
 
   .submenu li a:hover {
-    background: rgba(255, 255, 255, 0.12);
-    color: #fff;
+    background: rgba(0, 147, 201, 0.08);
+    color: var(--primary);
     padding-left: 1.75rem;
     padding-right: 1.25rem;
   }
