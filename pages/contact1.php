@@ -59,7 +59,8 @@
   </div>
 </header>
 
-<section class="page-hero" style="background-image: url('../image/hero-contact.jpg'); background-color: #006d99;">
+<section class="page-hero">
+  <img class="page-hero-img" src="../image/hero-contact.jpg" alt="" />
   <div class="page-hero-overlay"></div>
   <div class="page-hero-content">
     <span class="hero-badge">Contactez-nous</span>

@@ -19,7 +19,7 @@
   <div class="navbar">
    <a href="../index.html" class="logo-link">
     <div class="logo-section">
-     <img src="../image/logoFinale.png" alt="logo GEDES" />
+     <img src="../image/logo.png" alt="logo GEDES" />
      <div class="brand-text">
       <h1>GEDES International</h1>
       <p>Geo-Engineering DEsign and Surveying</p>
@@ -51,10 +51,9 @@
        <li><a href="electrification.html">Électrification</a></li>
       </ul>
      </li>
-     <li><a href="savoir.html">À PROPOS</a></li>
-        <li><a href="reference.html">RÉFÉRENCES</a></li>
+     <li><a href="reference.html">RÉFÉRENCES</a></li>
      <li><a href="video.html">VIDÉOS</a></li>
-     <li><a href="contact.html">CONTACT</a></li>
+     <li><a href="contact1.php">CONTACT</a></li>
     </ul>
    </nav>
    <div class="hamburger" onclick="toggleMenu()">
@@ -119,7 +118,7 @@ if (isset($_POST) && isset($_POST['nom']) && isset($_POST['email']) && isset($_P
    <h2 class="content-title">Attention</h2>
    <p class="content-lead"><?= htmlspecialchars($texte) ?></p>
    <?php endif; ?>
-   <a href="contact.html" class="page-cta-btn" style="margin-top: 2rem; display: inline-block;">Retour au formulaire</a>
+   <a href="contact1.php" class="page-cta-btn" style="margin-top: 2rem; display: inline-block;">Retour au formulaire</a>
   </div>
  </section>
 
@@ -151,7 +150,7 @@ if (isset($_POST) && isset($_POST['nom']) && isset($_POST['email']) && isset($_P
     <ul>
      <li><a href="reference.html">Références</a></li>
      <li><a href="video.html">Vidéos</a></li>
-     <li><a href="contact.html">Contact</a></li>
+     <li><a href="contact1.php">Contact</a></li>
      <li><a href="mailto:gedes@gedes-international.com">Email</a></li>
     </ul>
    </div>
