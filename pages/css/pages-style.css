@@ -554,6 +554,10 @@
 }
 
 @media (max-width: 768px) {
+  .page-hero-content {
+    padding: 0 1.5rem 2rem;
+  }
+
   .page-hero-content h1 {
     font-size: 1.8rem;
   }
@@ -592,6 +596,10 @@
 }
 
 @media (max-width: 480px) {
+  .page-hero-content {
+    padding: 0 1.25rem 1.75rem;
+  }
+
   .page-hero-content h1 {
     font-size: 1.4rem;
   }

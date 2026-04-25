@@ -63,7 +63,6 @@
   <img class="page-hero-img" src="../image/hero-contact.jpg" alt="" />
   <div class="page-hero-overlay"></div>
   <div class="page-hero-content">
-    <span class="hero-badge">Contactez-nous</span>
     <h1>Contact</h1>
   </div>
 </section>
