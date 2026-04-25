@@ -20,7 +20,12 @@
 .page-hero-overlay {
   position: absolute;
   inset: 0;
-  background: none;
+  background: linear-gradient(
+    to bottom,
+    transparent 55%,
+    rgba(255, 255, 255, 0.72) 80%,
+    rgba(255, 255, 255, 0.92) 100%
+  );
 }
 
 .page-hero-content {
