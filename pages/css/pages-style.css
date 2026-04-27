@@ -17,53 +17,6 @@
   object-fit: contain;
 }
 
-.page-hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    transparent 55%,
-    rgba(255, 255, 255, 0.72) 80%,
-    rgba(255, 255, 255, 0.92) 100%
-  );
-}
-
-.page-hero-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem 1.25rem;
-}
-
-.page-hero-content h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: #013a6b;
-  letter-spacing: 0.04em;
-  text-shadow: none;
-  margin: 0;
-}
-
-.page-hero-content .hero-badge {
-  display: inline-block;
-  background: rgba(0, 147, 201, 0.12);
-  border: 1.5px solid rgba(0, 147, 201, 0.45);
-  color: #006d99;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 0.35rem 1rem;
-  border-radius: 50px;
-  margin-bottom: 0.75rem;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-}
 
 /* ==================== BREADCRUMB ==================== */
 .breadcrumb {
@@ -554,14 +507,6 @@
 }
 
 @media (max-width: 768px) {
-  .page-hero-content {
-    padding: 0 1.5rem 2rem;
-  }
-
-  .page-hero-content h1 {
-    font-size: 1.8rem;
-  }
-
   .page-content {
     padding: 3rem 1.25rem;
   }
@@ -596,14 +541,6 @@
 }
 
 @media (max-width: 480px) {
-  .page-hero-content {
-    padding: 0 1.25rem 1.75rem;
-  }
-
-  .page-hero-content h1 {
-    font-size: 1.4rem;
-  }
-
   .application-grid {
     grid-template-columns: 1fr;
   }
