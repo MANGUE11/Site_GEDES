@@ -1494,13 +1494,13 @@ footer {
 .home-ref-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   transition: transform 0.45s ease;
 }
 
 .home-ref-card:hover img {
-  transform: scale(1.07);
+  transform: scale(1.04);
 }
 
 .home-ref-overlay {

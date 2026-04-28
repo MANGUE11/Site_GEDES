@@ -91,7 +91,7 @@
           <div class="info-card-icon"><i class="fas fa-phone"></i></div>
           <div>
             <h4>Téléphone</h4>
-            <p>(+225) 27 22 51 24 93<br>(+225) 07 77 10 11 11</p>
+            <p>(+225) 27 22 51 24 93<br>(+225) 07 77 08 04 54 / 05 76 56 56 11<br>(+225) 05 76 48 77 05 / 01 03 77 74 75</p>
           </div>
         </div>
         <div class="info-card">
@@ -179,7 +179,7 @@
       <p><i class="fas fa-map-marker-alt"></i> Siège Abidjan: Riviera Palmeraie</p>
       <p>01 BP 6116 Abidjan 01</p>
       <p><i class="fas fa-phone"></i> Tel: (+225) 27 22 51 24 93</p>
-      <p><i class="fas fa-mobile-alt"></i> Mobile: (+225) 07 77 10 11 11</p>
+      <p><i class="fas fa-mobile-alt"></i> Mobile: (+225) 07 77 08 04 54 / 05 76 56 56 11<br>(+225) 05 76 48 77 05 / 01 03 77 74 75</p>
     </div>
     <div class="footer-column">
       <h3>Services</h3>
